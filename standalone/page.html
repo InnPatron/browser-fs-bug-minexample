@@ -1,0 +1,26 @@
+<!doctype HTML>
+<html>
+<head></head>
+
+<body>
+
+<input type="text" id="program"></input>
+<button type="button" id="compile">Compile</button>
+
+<script type="text/javascript" src="browserfs.min.js"></script>
+<script type="text/javascript">
+
+BrowserFS.install(window);
+BrowserFS.configure({
+  fs: "LocalStorage"
+}, function(e) {
+  let fs = BrowserFS.BFSRequire("fs");
+  let files = fs.readdirSync("./");
+  
+  if (e) {
+    throw e;
+  }
+}); 
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "browserfs-path-bug",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "browserfs": "^1.4.3",
+    "browserify": "^16.2.3",
+    "http-server": "^0.11.1"
+  }
+}
